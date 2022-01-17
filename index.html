@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milestone-2 module-6</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        td,
+        th {
+            border: 1px solid;
+            text-align: center;
+            padding: 0 1em;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .container fieldset {
+            margin-left: 3em;
+        }
+
+        .first {
+            width: 7.5em;
+        }
+
+        .second {
+            width: 6em;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Exploring Audio and video</h2>
+    <!-- <audio src="media/audio/song.mp3" controls></audio> -->
+    <h2>Below is an audio player that will play in ..</h2>
+    <audio controls>
+        <source src="media/audio/song.mp3">
+    </audio><br><br>
+    <h2>Below is a sample mp4 video</h2>
+    <!-- <video src="media/video/sample-video.mp4" controls width="500em" height="300em"></video><br> -->
+    <video controls width="550em">
+        <source src="media/video/sample-video.mp4">
+    </video>
+    <!-- youtube video  -->
+    <h2>Below is a sample youtube video</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/SSenlcMDqzM" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    <hr color="red">
+    <h1>new module</h1>
+    <!-- ***************************************************************** -->
+    <!-- html5 schemantic structure -->
+    <header>
+        <h2>hello</h2>
+        <nav>
+            <a href="">a</a>
+            <a href="">b</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <header>Blog-1</header>
+            <article>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis nihil explicabo ut fugit
+                    assumenda tempora voluptates distinctio quisquam hic architecto.</p>
+            </article>
+            <footer>
+                <h4>realised by xxx</h4>
+            </footer>
+        </section>
+        <aside>
+            <p>hi this is aside of main element</p>
+        </aside>
+    </main>
+
+    <footer>
+        <h2>bye</h2>
+    </footer>
+    <!-- ***************************************************************** -->
+
+    <!-- html table excercise  -->
+    <table>
+        <caption>Simple table demonstration </caption>
+        <thead>
+            <tr>
+                <th>name</th>
+                <th>id</th>
+                <th>result</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+                <td>A</td>
+                <td>1</td>
+                <td>++</td>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td>2</td>
+                <td>+++</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td span="3">total</td>
+            </tr>
+        </tfoot>
+    </table>
+    <br><br>
+    <table>
+        <caption>
+            another table
+        </caption>
+
+        <colgroup>
+            <col span="2">
+            <col span="1">
+            <col span="2">
+        </colgroup>
+
+        <tr>
+            <td scope="col">name</td>
+            <td scope="col">Id</td>
+            <td scope="col">Result</td>
+        </tr>
+        <tr>
+            <td>A</td>
+            <td>1</td>
+            <td>++</td>
+        </tr>
+        <tr>
+            <td>B</td>
+            <td>2</td>
+            <td>+++</td>
+        </tr>
+        <tr>
+            <th scope="row" colspan="3">Total</th>
+        </tr>
+    </table>
+
+    <!-- ***************************************************************** -->
+    <hr color="red">
+    <!-- html form practice -->
+    <h2>CAF formulaire </h2>
+    <form action="">
+        <p> Name : <input type="text" name="name" id="name" placeholder="Enter your Name:"></p>
+        <p>Email : <input type="email" name="email" id="email" placeholder="Enter your E-mail:"></p>
+        <p>password : <input type="password" name="password" id="password" placeholder="Enter password"></p>
+        <section class="container">
+            <fieldset class="first">
+                <legend>select your colour</legend>
+                <p>
+                    <label for="red">
+                        <input type="radio" name="color" id="red">RED
+                    </label>
+                </p>
+                <p>
+                    <label for="green">
+                        <input type="radio" name="color" id="green">GREEN
+                    </label>
+                </p>
+                <p>
+                    <label for="blue">
+                        <input type="radio" name="color" id="blue">BLUE
+                    </label>
+                </p>
+            </fieldset>
+            <fieldset class="second">
+                <legend>Select Fruits</legend>
+                <p>
+                    <label for="mango">
+                        <input type="checkbox" name="" id="mango">Mango
+                    </label>
+                </p>
+                <p>
+                    <label for="banana">
+                        <input type="checkbox" name="" id="banana">Banana
+                    </label>
+                </p>
+                <p>
+                    <label for="apple">
+                        <input type="checkbox" name="" id="apple">Apple
+                    </label>
+                </p>
+            </fieldset>
+        </section>
+        <h3>leave your comments below: </h3>
+        <textarea name="" id="" cols="30" rows="4"></textarea><br><br>
+        <button type="submit">Submit</button>
+        <button type="reset">Modify</button>
+    </form>
+</body>
+
+</html>
